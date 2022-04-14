@@ -1,0 +1,178 @@
+.container {
+    padding: 0 50px;
+
+}
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.title {
+    font-size: 30px;
+    border-bottom: 4px solid rgba(128, 98, 0, 0.815);
+    width: max-content;
+}
+
+.subtitle {
+    font-size: 50px;
+    color: rgb(2, 73, 2);
+}
+
+.service {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 50px;
+    background-color: whitesmoke;
+    position: relative;
+}
+
+.form {
+    width: auto;
+    height: 200px;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.inputS {
+    height: 40px;
+    padding: 10px;
+    margin: 1px;
+
+}
+
+
+.inputL {
+    width: 100%;
+    height: 50px;
+    padding-left: 10px;
+}
+
+.inputA {
+    padding: 10px;
+    margin-left: 2px;
+    margin-top: 21px;
+    background-color: rgba(36, 32, 2, 0.9);
+    border: none;
+    font-size: 18px;
+    border-radius: 5px;
+    font-weight: 100;
+    cursor: pointer;
+
+    color: rgb(203, 233, 71);
+}
+
+.cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.buttonF {
+    padding: 0;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(230, 197, 10);
+    cursor: pointer;
+    font-size: 10px;
+}
+
+.video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.media {
+    width: 85%;
+    height: 85%;
+    border-radius: 5%;
+    overflow: hidden;
+    transition: all 1s ease-out;
+    cursor: pointer;
+}
+
+.cat {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: gray;
+    letter-spacing: 5px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.service:hover .media {
+    transform: scale(1.1);
+}
+
+.desc {
+    position: absolute;
+    width: 70%;
+    text-align: center;
+    z-index: 999;
+    background-color: rgba(189, 214, 236, 0.432);
+    border-radius: 10px;
+    opacity: 0;
+    transition: all 1s ease-out;
+}
+
+.service:hover .desc {
+    opacity: 1;
+}
+
+@media screen and (max-width:700px) {
+    .container {
+        padding: 30px;
+    }
+
+    .services {
+        justify-content: center;
+    }
+
+    .cat {
+        letter-spacing: 4px;
+    }
+
+    .service {
+        width: 400px;
+        height: 400px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .container {
+        padding: 10px;
+    }
+
+    .form {
+        width: 100%;
+    }
+
+    .inputS:first-child {
+        margin: 0;
+    }
+
+    .services {
+        justify-content: center;
+    }
+
+    .cat {
+        letter-spacing: 2px;
+    }
+
+    .service {
+        width: 300px;
+        height: 300px;
+        margin: 10px;
+    }
+}
